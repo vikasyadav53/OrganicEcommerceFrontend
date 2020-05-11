@@ -1,25 +1,25 @@
 # OrganicEcommerceFrontend
 
 # Steps to Run Project
-1) Create Spring boot project with "web" and "dev-tools" as dependecies
-2)Add maven plugin 
-  <plugin>
-				<groupId>com.github.eirslett</groupId>
-				<artifactId>frontend-maven-plugin</artifactId>
-				<version>1.8.0</version>
-				<configuration>
-					<nodeVersion>v10.18.0</nodeVersion>
-				</configuration>
-				<executions>
-					<execution>
-						<id>install-npm</id>
-						<goals>
-							<goal>install-node-and-npm</goal>
-						</goals>
-					</execution>
-  </executions>
-  <plugin>
-    
+
+    1) Create Spring boot project with "web" and "dev-tools" as dependecies
+    2)Add maven plugin 
+        <plugin>
+              <groupId>com.github.eirslett</groupId>
+              <artifactId>frontend-maven-plugin</artifactId>
+              <version>1.8.0</version>
+              <configuration>
+                <nodeVersion>v10.18.0</nodeVersion>
+              </configuration>
+              <executions>
+                <execution>
+                  <id>install-npm</id>
+                  <goals>
+                    <goal>install-node-and-npm</goal>
+                  </goals>
+                </execution>
+        </executions>
+        <plugin>    
     3)Run mvnw generate-resources // this will install node.exe locally under node folder 
     4) Create local_angular_cli_install.bat to run npm commands
     5) run local_angular_cli_install.bat install @angular/cli@8.3.2 //this will install angular 8 locally
